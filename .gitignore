@@ -3,3 +3,6 @@ rawdata/
 
 # logs
 *.log
+
+# idea-file
+idea.md

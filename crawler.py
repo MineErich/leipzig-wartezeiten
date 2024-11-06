@@ -1,14 +1,15 @@
 #####################################################
 #               WHAT IS THIS ?                      #
 #####################################################
-# This shall be the script which does not only
-# request and save the raw data, but will also 
-# extract the needed data and write it to:
-# 1. daily json     (data of the day)
-# 2. 30days.json    (data of the month)
-# 3. alltime.json   (every data since start)
+# This is the basic crawler that will request the
+# data from the api and save the json-files to your
+# local storage.
+# usefull for just collecting data, that will be used
+# later (also good, when purpose is unknown)
+#
+# recommended: create a cronjob to run this file
+# every hour or so.
 #####################################################
-
 
 
 #####################################################
@@ -32,11 +33,11 @@ from os import path as ospath
 source_dir = ospath.dirname(ospath.realpath(__file__))
 
 # default logfile: lwartezeiten.log
-logfile = "lwartezeiten.log"
+logfile = "crawler.log"
 
 # logging conf
 FORMAT = '%(asctime)s %(levelname)s [%(funcName)s] %(message)s'
-logging.basicConfig(filename=logfile, encoding='utf-8', level=logging.INFO, format=FORMAT)
+logging.basicConfig(filename=logfile, encoding='utf-8', level=logging.WARN, format=FORMAT)
 
 # request to api
 def get_current_json():
@@ -46,20 +47,6 @@ def get_current_json():
     
     get_current_data = requests.get('https://dev.lehst.de/Projects/Wartezeiten/')
     if get_current_data.status_code == 200:
-        # Daten extrahieren in buffer schreiben
-            # json-obj aufmachen
-            # for location in data:
-            # HELP:
-            # ich will hier nur differenz sammeln und dann in day;30days;alltime.json schreiben..
-            # sonst muss ich immer das gesamte file einlesen und dumpen
-            # btw. wollte ich alltime vllt auf jährlich begrenzen oder so. dunno
-            #   schreib das ins json-obj
-            #   schieb json-obj in day;30days;alltime.json
-            # 
-        # 1. D in tagesaktuelle json speichern
-        # 2. D in 30days.json speichern
-        # 3. D in alltime.json speichern
-        # 4. D als orig in rawdata/ ablegen
         with open(ospath.join(source_dir, 'rawdata',date,)+'.json', 'wb') as payload2file:
             payload2file.write(get_current_data.content)
         logging.info("saved "+date+'.json')
