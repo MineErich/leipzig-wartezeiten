@@ -1,0 +1,149 @@
+{
+    "timestamp": 1730892733,
+    "locations": {
+        "St\u00f6tteritzer Stra\u00dfe": {
+            "name": "Spontankunden Ausbildungsb\u00fcrgerb\u00fcro",
+            "active_counter_count": "4",
+            "walkin_waiting_count": "0",
+            "walkin_serving_count": "0",
+            "walkin_average_waitingtime": "0",
+            "walkin_end_count": "0",
+            "predicted_waiting_time": "0",
+            "uid": "6db57d77-7ee5-4620-a69c-84f4d810e8ce",
+            "current_status": "closed",
+            "ticketstopp_active": 0
+        },
+        "B\u00f6hlitz-Ehrenberg": {
+            "name": "Spontankunden B\u00f6hlitz-Ehrenberg",
+            "active_counter_count": "2",
+            "walkin_waiting_count": "0",
+            "walkin_serving_count": "0",
+            "walkin_average_waitingtime": "0",
+            "walkin_end_count": "22",
+            "predicted_waiting_time": "0",
+            "uid": "48fb4ecc-16e4-4d9b-b64d-ada749042cba",
+            "current_status": "open",
+            "ticketstopp_active": 0
+        },
+        "Gohlis-Center": {
+            "name": "Spontankunden Gohlis-Center",
+            "active_counter_count": "3",
+            "walkin_waiting_count": "0",
+            "walkin_serving_count": "0",
+            "walkin_average_waitingtime": "0",
+            "walkin_end_count": "44",
+            "predicted_waiting_time": "0",
+            "uid": "dadff2d2-c6c0-4e7c-8b72-e973d0f4ff87",
+            "current_status": "open",
+            "ticketstopp_active": 0
+        },
+        "Leutzsch": {
+            "name": "Spontankunden Leutzsch",
+            "active_counter_count": "3",
+            "walkin_waiting_count": "0",
+            "walkin_serving_count": "0",
+            "walkin_average_waitingtime": "0",
+            "walkin_end_count": "23",
+            "predicted_waiting_time": "0",
+            "uid": "5d9e2379-a9e0-41e3-88ca-414f3c0f50ef",
+            "current_status": "open",
+            "ticketstopp_active": 0
+        },
+        "Liebertwolkwitz": {
+            "name": "Spontankunden Liebertwolkwitz",
+            "active_counter_count": "1",
+            "walkin_waiting_count": "0",
+            "walkin_serving_count": "0",
+            "walkin_average_waitingtime": "0",
+            "walkin_end_count": "20",
+            "predicted_waiting_time": "0",
+            "uid": "ce356bed-7ff0-463f-91b3-8a41d08f1c4f",
+            "current_status": "open",
+            "ticketstopp_active": 0
+        },
+        "Otto-Schill-Stra\u00dfe": {
+            "name": "Spontankunden Otto-Schill-Stra\u00dfe",
+            "active_counter_count": "9",
+            "walkin_waiting_count": "0",
+            "walkin_serving_count": "5",
+            "walkin_average_waitingtime": "0",
+            "walkin_end_count": "116",
+            "predicted_waiting_time": "0",
+            "uid": "0878233e-81ab-4a30-9cf0-a83a463d2cc0",
+            "current_status": "open",
+            "ticketstopp_active": 0
+        },
+        "Paunsdorf-Center": {
+            "name": "Spontankunden Paunsdorf-Center",
+            "active_counter_count": "3",
+            "walkin_waiting_count": "2",
+            "walkin_serving_count": "1",
+            "walkin_average_waitingtime": "198",
+            "walkin_end_count": "34",
+            "predicted_waiting_time": "7",
+            "uid": "88a8bfb2-8290-428e-b715-950c818e229f",
+            "current_status": "open",
+            "ticketstopp_active": 0
+        },
+        "Ratzelbogen": {
+            "name": "Spontankunden Ratzelbogen",
+            "active_counter_count": "4",
+            "walkin_waiting_count": "1",
+            "walkin_serving_count": "3",
+            "walkin_average_waitingtime": "204",
+            "walkin_end_count": "51",
+            "predicted_waiting_time": "2",
+            "uid": "7bef50e5-0382-492f-8dc4-2ef3ea821a3a",
+            "current_status": "open",
+            "ticketstopp_active": 0
+        },
+        "Sch\u00f6nefeld": {
+            "name": "Spontankunden Sch\u00f6nefeld",
+            "active_counter_count": "3",
+            "walkin_waiting_count": "3",
+            "walkin_serving_count": "1",
+            "walkin_average_waitingtime": "143",
+            "walkin_end_count": "37",
+            "predicted_waiting_time": "12",
+            "uid": "e4aad9e2-ed97-455f-8b2b-15a2bdaa6026",
+            "current_status": "open",
+            "ticketstopp_active": 0
+        },
+        "S\u00fcdwest-Zentrum": {
+            "name": "Spontankunden S\u00fcdwest-Zentrum",
+            "active_counter_count": "2",
+            "walkin_waiting_count": "1",
+            "walkin_serving_count": "0",
+            "walkin_average_waitingtime": "116",
+            "walkin_end_count": "29",
+            "predicted_waiting_time": "8",
+            "uid": "310c31e7-d627-49d4-9053-ca87f0ee0dfa",
+            "current_status": "open",
+            "ticketstopp_active": 0
+        },
+        "Wiedebach-Passage": {
+            "name": "Spontankunden Wiedebach-Passage",
+            "active_counter_count": "2",
+            "walkin_waiting_count": "0",
+            "walkin_serving_count": "0",
+            "walkin_average_waitingtime": "0",
+            "walkin_end_count": "35",
+            "predicted_waiting_time": "0",
+            "uid": "ffb583da-66c2-4ae7-9d5f-959dc9dc566a",
+            "current_status": "open",
+            "ticketstopp_active": 0
+        },
+        "Wiederitzsch": {
+            "name": "Spontankunden Wiederitzsch",
+            "active_counter_count": "2",
+            "walkin_waiting_count": "1",
+            "walkin_serving_count": "1",
+            "walkin_average_waitingtime": "1067",
+            "walkin_end_count": "15",
+            "predicted_waiting_time": "5",
+            "uid": "a9863d87-4157-42f0-bc3a-76880ad66c21",
+            "current_status": "open",
+            "ticketstopp_active": 0
+        }
+    }
+}
