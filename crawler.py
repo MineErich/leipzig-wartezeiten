@@ -18,7 +18,7 @@
 # needed dir:
 # dir on same level called "rawdata"
 
-# required libraries: requests, datetime, logging, time
+# required libraries: requests, datetime, logging, os
 # install library: 
 # WINDOWS: py -m pip install [library]
 # UNIX: python3 -m pip install [library]
@@ -28,16 +28,26 @@ import requests
 from datetime import datetime
 import logging
 from os import path as ospath
+from os import makedirs as osmakedirs
 
-# get current dir
-source_dir = ospath.dirname(ospath.realpath(__file__))
-
-# default logfile: lwartezeiten.log
+# default logfile: crawler.log
 logfile = "crawler.log"
 
 # logging conf
 FORMAT = '%(asctime)s %(levelname)s [%(funcName)s] %(message)s'
 logging.basicConfig(filename=logfile, encoding='utf-8', level=logging.WARN, format=FORMAT)
+
+
+# get current dir
+source_dir = ospath.dirname(ospath.realpath(__file__))
+
+# check for needed dirs
+# if not present create them
+needed_dirs = ["daily","monthly","rawdata"]
+for dir in needed_dirs:
+    if not ospath.isdir(ospath.join(source_dir,dir)):
+        osmakedirs(ospath.join(source_dir,dir))
+        logging.info(dir+" was not present. created it!")
 
 # request to api
 def get_current_json():
