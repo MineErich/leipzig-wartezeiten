@@ -15,36 +15,20 @@
 
 ##### automatisierte Speicherung
 
+###### crawler.py
+- speichert einfach nur bei Aufruf das aktuelle json ab
+- sollte nur zwischen 7 und 20 Uhr tätig sein!!
+
 ###### get_data.py
 
 - ruft bei Ausführung api ab
+- speichert relevante Daten in daily/monthly/alltime ab
 - speichert json ab in Ordner "rawdata"
 - sollte nur zwischen 7 und 20 Uhr tätig sein!!
 
-###### interprete.py
-
-- ließt alle json's aus rawdata ein und erstellt verarbeitbare Daten
-- wird geseichert in all_data.json
-
-- Ideen dazu:
-- es sollte eine json mit den Daten der letzten 30 Tage geben und eine für all-time
-- in der json sind die Werte für alle Bürgerbüros (Bb)
-- interprete.py ließt immer nur die neusten rawdata-json's ein und ergänzt sie
-- dazu sollte in 30days.json und alltime.json ein timestamp mit dem neusten Datenabruf drin stehen
+##### Aufbau raw JSON
 
 <code>
-IN:
-rawdata/*.json
-
-OUT:
-alltime.json
-    für jedes Bb
-        30 tage á 24h, also 720 datenpunkte
-alltime.json
-    für jedes Bb
-        alltime á 24h, also 24*n datenpunkte
-
-Aufbau JSON
 timestamp
 location
     $name$
@@ -68,13 +52,13 @@ location
 
 ### Progress
 
-- [DONE] get_data
-- [DONE] interprete
-- [DONE] alltime entält alle
-- [OPEN] 30days soll nur letzte 30 Tage enthalten
-- [OPEN] csv-export
-- [OPEN] graph
-- [OPEN] web-view 
+- [DONE] crawler (py)
+- [DONE] get_data (py)
+- [WHY?] interprete (py)
+- [DONE] alltime,montly,daily (py)
+- [OPEN] csv-export (py)
+- [OPEN] graph (js)
+- [OPEN] web-view (js)
 
 ### Speicherprognose
 
