@@ -1,8 +1,16 @@
-# data dir
-rawdata/
-
 # logs
-*.log
+lwartezeiten.log
+lwinterprete.log
+crawler.log
 
 # idea-file
 idea.md
+
+# OLD files
+OLD*
+
+# data dir
+rawdata/
+daily/
+monthly/
+alltime.json
